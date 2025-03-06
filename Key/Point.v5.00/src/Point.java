@@ -85,6 +85,10 @@ public class Point {
         return Math.sqrt(x*x+y*y);
     }
 
+    public double distanceTo(Point p) {
+        return Math.sqrt(Math.pow(p.x-x,2)+Math.pow(p.y-y,2));
+    }
+
     public void translate(int dx, int dy) {
         x += dx;
         y += dy;
